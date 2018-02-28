@@ -11,21 +11,71 @@
 
  ];
 
+ var conmebol = [];
+
+
+ // function conm(group){
+ // 	if(group[0].rank === 'B'){
+
+ // 		conmebol.push
+ // 	}
+
+ // }
 
  function spread1(){
 
- 	// document.getElementById("pot10").innerHTML = "X"
- 	// document.getElementById("pot11").innerHTML = "X"
- 	// document.getElementById("pot12").innerHTML = "X"
- 	// document.getElementById("pot13").innerHTML = "X"
- 	// document.getElementById("pot14").innerHTML = "X"
- 	// document.getElementById("pot15").innerHTML = "X"
- 	// document.getElementById("pot16").innerHTML = "X"
- 	// document.getElementById("pot17").innerHTML = "X"
+ 	document.getElementById("pot10").innerHTML = `<img src="images/Russia.png" />`
+ 	document.getElementById("pot11").innerHTML = `<img src="images/Germany.png" />`
+ 	document.getElementById("pot12").innerHTML = `<img src="images/Brazil.png" />`
+ 	document.getElementById("pot13").innerHTML = `<img src="images/Portugal.png" />`
+ 	document.getElementById("pot14").innerHTML = `<img src="images/Argentina.png" />`
+ 	document.getElementById("pot15").innerHTML = `<img src="images/Belgium.png" />`
+ 	document.getElementById("pot16").innerHTML = `<img src="images/Poland.png" />`
+ 	document.getElementById("pot17").innerHTML = `<img src="images/France.png" />`
+
+
+ }
+ function spread2(){
+
+ 	document.getElementById("2a").innerHTML = `<img src="images/Spain.png" />`
+ 	document.getElementById("2b").innerHTML = `<img src="images/Peru.png" />`
+ 	document.getElementById("2c").innerHTML = `<img src="images/Switzerland.png" />`
+ 	document.getElementById("2d").innerHTML = `<img src="images/England.png" />`
+ 	document.getElementById("2e").innerHTML = `<img src="images/Colombia.png" />`
+ 	document.getElementById("2f").innerHTML = `<img src="images/Mexico.png" />`
+ 	document.getElementById("2g").innerHTML = `<img src="images/Uruguay.png" />`
+ 	document.getElementById("2h").innerHTML = `<img src="images/Croatia.png" />`
 
 
  }
 
+ function spread3(){
+
+ 	document.getElementById("3a").innerHTML = `<img src="images/Denmark.png" />`
+ 	document.getElementById("3b").innerHTML = `<img src="images/Iceland.png" />`
+ 	document.getElementById("3c").innerHTML = `<img src="images/Costa Rica.png" />`
+ 	document.getElementById("3d").innerHTML = `<img src="images/Sweden.png" />`
+ 	document.getElementById("3e").innerHTML = `<img src="images/Tunisia.png" />`
+ 	document.getElementById("3f").innerHTML = `<img src="images/Egypt.png" />`
+ 	document.getElementById("3g").innerHTML = `<img src="images/Senegal.png" />`
+ 	document.getElementById("3h").innerHTML = `<img src="images/Iran.png" />`
+
+
+ }
+
+function spread4(){
+
+ 	document.getElementById("4a").innerHTML = `<img src="images/Serbia'.png" />`
+ 	document.getElementById("4b").innerHTML = `<img src="images/Nigeria.png" />`
+ 	document.getElementById("4c").innerHTML = `<img src="images/Australia.png" />`
+ 	document.getElementById("4d").innerHTML = `<img src="images/Japan.png" />`
+ 	document.getElementById("4e").innerHTML = `<img src="images/Morocco.png" />`
+ 	document.getElementById("4f").innerHTML = `<img src="images/Panama.png" />`
+ 	document.getElementById("4g").innerHTML = `<img src="images/South Korea.png" />`
+ 	document.getElementById("4h").innerHTML = `<img src="images/Saudi Arabia.png" />`
+
+
+ }
  var potB = [
  			{"name":"Spain","init":"ESP","rank":"A"},
  			{"name":"Peru","init":"PER","rank":"B"},
@@ -75,7 +125,7 @@ var groupH=[];
 function pot1(){
 
 	
-
+	
 	console.log("===========");
 
 
@@ -84,7 +134,6 @@ function pot1(){
 	potA.splice(0,1);
 	
 	// potA.push({"init": "BOOBS"});
-	spread1();
 
 
 
@@ -96,7 +145,6 @@ function pot1(){
 	console.log(groupA);
 
 setTimeout(function(){document.getElementById("b1").innerHTML = `<img src="images/${select1[0].name}.png" />` +" "+ select1[0].name},1000);
-	spread1();
 
 	var randz = Math.floor(Math.random() * potA.length)
  	console.log(randz);
@@ -105,7 +153,6 @@ setTimeout(function(){document.getElementById("b1").innerHTML = `<img src="image
 	groupC.push(select2[0]);
 
 setTimeout(function(){document.getElementById("c1").innerHTML = `<img src="images/${select2[0].name}.png" />` +" "+ select2[0].name},2000);
-	spread1();
 	
 	var randz= Math.floor(Math.random() * potA.length)
  	console.log(randz);
@@ -114,7 +161,6 @@ setTimeout(function(){document.getElementById("c1").innerHTML = `<img src="image
 	groupD.push(select3[0]);
 
 setTimeout(function(){document.getElementById("d1").innerHTML = `<img src="images/${select3[0].name}.png" />` +" "+ select3[0].name},3000);
-spread1();
 
 setTimeout(function(){pot4()},3000);
 
@@ -126,7 +172,6 @@ setTimeout(function(){pot4()},3000);
 	groupE.push(select4[0]);
 
 setTimeout(function(){document.getElementById("e1").innerHTML = `<img src="images/${select4[0].name}.png" />` +" "+ select4[0].name},4000);
-spread1();
 
 	var randz = Math.floor(Math.random() * potA.length)
  	console.log(randz);
@@ -136,7 +181,7 @@ spread1();
 
 setTimeout(function(){document.getElementById("f1").innerHTML = `<img src="images/${select5[0].name}.png" />` +" "+ select5[0].name},5000);
 
-spread1();
+
 
 	var randz = Math.floor(Math.random() * potA.length)
  	console.log(randz);
@@ -145,7 +190,6 @@ spread1();
 	groupG.push(select6[0]);
 
 setTimeout(function(){document.getElementById("g1").innerHTML = `<img src="images/${select6[0].name}.png" />` +" "+ select6[0].name},6000);
-spread1();
 
 	var randz = Math.floor(Math.random() * potA.length)
  	console.log(randz);
@@ -155,8 +199,7 @@ spread1();
 
 setTimeout(function(){document.getElementById("h1").innerHTML = `<img src="images/${select7[0].name}.png" />` +" "+ select7[0].name},7000);
 
-spread1();
-	
+setTimeout(function(){spread1()},8000);	
 
 
 	var mySpans = document.getElementsByName("pot1");
@@ -263,6 +306,7 @@ setTimeout(function(){document.getElementById("g4").innerHTML = `<img src="image
 
 setTimeout(function(){document.getElementById("h4").innerHTML = `<img src="images/${select7[0].name}.png" />` +" "+ select7[0].name},7000);
 
+setTimeout(function(){spread4()},8000);	
 
 
 	console.log(groupH)
@@ -368,6 +412,7 @@ setTimeout(function(){document.getElementById("g3").innerHTML = `<img src="image
 
 setTimeout(function(){document.getElementById("h3").innerHTML = `<img src="images/${select7[0].name}.png" />` +" "+ select7[0].name},7000);
  
+setTimeout(function(){spread3()},8000);	
 
 
 console.log(groupA)
@@ -476,7 +521,7 @@ setTimeout(function(){document.getElementById("g2").innerHTML = `<img src="image
 
 setTimeout(function(){document.getElementById("h2").innerHTML = `<img src="images/${select7[0].name}.png" />` +" "+ select7[0].name},7000);
 
-
+setTimeout(function(){spread2()},8000);	
 
 console.log(groupA);
 console.log(groupB);
